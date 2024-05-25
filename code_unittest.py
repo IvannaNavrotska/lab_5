@@ -16,6 +16,9 @@ class TestCode(unittest.TestCase):
     def test_fibonacci(self):
         self.assertEqual(code.fibonacci(0), 1)
         self.assertEqual(code.fibonacci(5), 8)
+
+#it's time for negative testing
+
         self.assertNotEqual(code.fibonacci(5), 3)
 
 #it's time for negative testing
