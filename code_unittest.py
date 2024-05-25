@@ -7,6 +7,9 @@ class TestCode(unittest.TestCase):
         self.assertEqual(code.gcd(0, 0), None)
         self.assertEqual(code.gcd(17, 32), 1)
         self.assertNotEqual(code.gcd(17, 32), 6)
+
+#it's time for negative testing
+
         self.assertIsNone(code.gcd(4.5, 8))
         self.assertIsNone(code.gcd('one', 'five'))
 
@@ -14,6 +17,9 @@ class TestCode(unittest.TestCase):
         self.assertEqual(code.fibonacci(0), 1)
         self.assertEqual(code.fibonacci(5), 8)
         self.assertNotEqual(code.fibonacci(5), 3)
+
+#it's time for negative testing
+
         self.assertIsNone(code.fibonacci('five'))
         self.assertIsNone(code.fibonacci(-5))
 
