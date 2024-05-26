@@ -21,4 +21,4 @@ jobs:
         docker push ghcr.io/ivannanavrotska/my-code-testing-image:latest
     - name: Docker run
       run: |
-        docker run --name my-container -d ghcr.io/ivannanavrotska/my-code-testing-image:latest
+        docker run ghcr.io/ivannanavrotska/my-code-testing-image:latest
