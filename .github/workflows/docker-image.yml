@@ -19,3 +19,6 @@ jobs:
         docker login --username ${{ secrets.USERNAME }} --password ${{ secrets.GH_PAT}} ghcr.io
         docker build . --tag ghcr.io/ivannanavrotska/my-code-testing-image:latest
         docker push ghcr.io/ivannanavrotska/my-code-testing-image:latest
+    - name: Docker run
+      run: |
+        docker run --name my-container -d ghcr.io/ivannanavrotska/my-code-testing-image:latest
